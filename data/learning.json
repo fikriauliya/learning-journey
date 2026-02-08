@@ -2,6 +2,23 @@
   "started": "2026-02-07",
   "topics": [
     {
+      "id": 6,
+      "title": "AI Existential Risk",
+      "date": "2026-02-08",
+      "category": "Technology",
+      "depth": "Undergraduate/Graduate",
+      "concepts": [
+        "Alignment problem",
+        "Instrumental convergence",
+        "Orthogonality thesis",
+        "Mesa-optimization",
+        "Treacherous turn",
+        "Specification problem",
+        "Governance challenges"
+      ],
+      "why": "Understanding the potential dangers of artificial intelligence — from sci-fi prophecies to serious research on existential risk."
+    },
+    {
       "id": 1,
       "title": "Causation vs Correlation",
       "date": "2026-02-07",
@@ -90,6 +107,7 @@
     }
   ],
   "activityLog": [
+    { "date": "2026-02-08", "count": 1, "topics": ["AI Existential Risk"] },
     { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"] }
   ],
   "suggestedNext": [

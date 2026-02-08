@@ -148,7 +148,8 @@ function getCategoryClass(category) {
   const map = {
     'Critical Thinking': 'critical',
     'Natural Science': 'natural',
-    'Applied Science': 'applied'
+    'Applied Science': 'applied',
+    'Technology': 'technology'
   };
   return map[category] || 'critical';
 }

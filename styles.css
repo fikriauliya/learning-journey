@@ -13,6 +13,7 @@
   --category-critical: #e17055;
   --category-natural: #00b894;
   --category-applied: #0984e3;
+  --category-technology: #6c5ce7;
 }
 
 * {
@@ -198,6 +199,7 @@ h2 {
 .timeline-category.critical { background: rgba(225, 112, 85, 0.15); color: var(--category-critical); }
 .timeline-category.natural { background: rgba(0, 184, 148, 0.15); color: var(--category-natural); }
 .timeline-category.applied { background: rgba(9, 132, 227, 0.15); color: var(--category-applied); }
+.timeline-category.technology { background: rgba(108, 92, 231, 0.15); color: var(--category-technology); }
 
 /* Next List */
 .next-list {
