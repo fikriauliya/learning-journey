@@ -72,7 +72,7 @@ function renderHeatmap() {
   
   const today = new Date();
   const startDate = new Date(today);
-  startDate.setDate(startDate.getDate() - 363);
+  startDate.setDate(startDate.getDate() - 90);
   
   const dayOfWeek = startDate.getDay();
   startDate.setDate(startDate.getDate() - dayOfWeek);
@@ -82,8 +82,11 @@ function renderHeatmap() {
   const cells = [];
   const currentDate = new Date(startDate);
   
-  while (currentDate <= today || cells.length % 7 !== 0) {
-    const dateStr = currentDate.toISOString().split('T')[0];
+  const endDate = new Date(today);
+  endDate.setDate(endDate.getDate() + (6 - endDate.getDay())); // pad to end of week
+  
+  while (currentDate <= endDate) {
+    const dateStr = `${currentDate.getFullYear()}-${String(currentDate.getMonth()+1).padStart(2,'0')}-${String(currentDate.getDate()).padStart(2,'0')}`;
     const activity = activityMap.get(dateStr);
     const count = activity ? activity.count : 0;
     const topics = activity ? activity.topics : [];
@@ -101,13 +104,14 @@ function renderHeatmap() {
     currentDate.setDate(currentDate.getDate() + 1);
   }
   
+  const totalWeeks = Math.ceil(cells.length / 7);
+  monthsContainer.style.gridTemplateColumns = `repeat(${totalWeeks}, 1fr)`;
+  monthsContainer.style.gap = '3px';
   monthsContainer.innerHTML = '';
-  let currentWeek = 0;
   months.forEach((m, i) => {
     const span = document.createElement('span');
     span.textContent = m.name;
-    span.style.marginLeft = i === 0 ? '0' : `${(m.index - currentWeek - 1) * 9}px`;
-    currentWeek = m.index;
+    span.style.gridColumnStart = m.index + 1;
     monthsContainer.appendChild(span);
   });
   
@@ -117,7 +121,7 @@ function renderHeatmap() {
     div.className = `heatmap-cell level-${cell.level}`;
     if (cell.isFuture) div.style.opacity = '0.3';
     
-    div.addEventListener('mouseenter', (e) => {
+    const tooltipContent = () => {
       const date = new Date(cell.date).toLocaleDateString('en', { 
         weekday: 'short', month: 'short', day: 'numeric', year: 'numeric'
       });
@@ -130,8 +134,10 @@ function renderHeatmap() {
         }).join(', ');
         content += '<br><em>' + memberNames + '</em>';
       }
-      showTooltip(e, content);
-    });
+      return content;
+    };
+
+    div.addEventListener('mouseenter', (e) => showTooltip(e, tooltipContent()));
     
     div.addEventListener('mousemove', (e) => {
       tooltip.style.left = e.pageX + 10 + 'px';
@@ -139,6 +145,14 @@ function renderHeatmap() {
     });
     
     div.addEventListener('mouseleave', hideTooltip);
+
+    // Touch support
+    div.addEventListener('touchstart', (e) => {
+      e.preventDefault();
+      const touch = e.touches[0];
+      showTooltip({ pageX: touch.pageX, pageY: touch.pageY - 40 }, tooltipContent());
+      setTimeout(hideTooltip, 2000);
+    }, { passive: false });
     heatmap.appendChild(div);
   });
 }
