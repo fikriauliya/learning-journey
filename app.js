@@ -1,7 +1,7 @@
 // Family Learning Journey App
 let learningData = null;
 let tooltip = null;
-let activeMember = 'all';
+let activeMember = 'levi';
 
 async function init() {
   try {
@@ -41,10 +41,7 @@ function hideTooltip() {
 function renderMemberTabs() {
   const tabs = document.getElementById('member-tabs');
   
-  let html = `<div class="member-tab ${activeMember === 'all' ? 'active' : ''}" data-member="all">
-    <span class="emoji">👨‍👩‍👧‍👦</span>All
-  </div>`;
-  
+  let html = '';
   learningData.members.forEach(member => {
     html += `<div class="member-tab ${activeMember === member.id ? 'active' : ''}" data-member="${member.id}">
       <span class="emoji">${member.emoji}</span>${member.name}
@@ -151,10 +148,8 @@ function renderTimeline() {
   
   let topics = [...learningData.topics];
   
-  // Filter by member if not "all"
-  if (activeMember !== 'all') {
-    topics = topics.filter(t => t.member === activeMember);
-  }
+  // Filter by active member
+  topics = topics.filter(t => t.member === activeMember);
   
   // Sort by date (newest first)
   topics.sort((a, b) => new Date(b.date) - new Date(a.date));
@@ -164,15 +159,12 @@ function renderTimeline() {
     const date = new Date(topic.date).toLocaleDateString('en', { 
       month: 'short', day: 'numeric' 
     });
-    const member = learningData.members.find(m => m.id === topic.member);
-    const memberClass = topic.member === 'yusuf' ? 'yusuf' : '';
     
     return `
       <div class="timeline-item member-${topic.member}">
         <span class="timeline-date">${date}</span>
         <span class="timeline-title">${topic.title}</span>
         <span class="timeline-category ${categoryClass}">${topic.category}</span>
-        ${activeMember === 'all' ? `<span class="timeline-member ${memberClass}">${member ? member.emoji + member.name : topic.member}</span>` : ''}
       </div>
     `;
   }).join('');
@@ -183,20 +175,14 @@ function renderNextTopics() {
   
   let suggestions = [...learningData.suggestedNext];
   
-  // Filter by member if not "all"
-  if (activeMember !== 'all') {
-    suggestions = suggestions.filter(s => s.member === activeMember);
-  }
+  // Filter by active member
+  suggestions = suggestions.filter(s => s.member === activeMember);
   
   list.innerHTML = suggestions.map(topic => {
-    const member = learningData.members.find(m => m.id === topic.member);
-    const memberClass = topic.member === 'yusuf' ? 'yusuf' : '';
-    
     return `
       <div class="next-item member-${topic.member}">
         <span class="next-title">${topic.title}</span>
         <span>— ${topic.description.split('.')[0]}</span>
-        ${activeMember === 'all' ? `<span class="next-member ${memberClass}">${member ? member.emoji : ''}</span>` : ''}
       </div>
     `;
   }).join('');
