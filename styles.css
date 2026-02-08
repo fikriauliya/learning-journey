@@ -14,6 +14,9 @@
   --category-natural: #00b894;
   --category-applied: #0984e3;
   --category-technology: #6c5ce7;
+  --category-science: #00b894;
+  --category-mathematics: #fdcb6e;
+  --category-psychology: #e84393;
 }
 
 * {
@@ -150,6 +153,42 @@ h2 {
 .legend-box.level-3 { background: var(--green-3); }
 .legend-box.level-4 { background: var(--green-4); }
 
+/* Member Tabs */
+.members-section {
+  margin-bottom: 1rem;
+}
+
+.member-tabs {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.member-tab {
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid var(--border);
+  background: var(--bg-secondary);
+  transition: all 0.2s;
+}
+
+.member-tab:hover {
+  border-color: var(--accent);
+}
+
+.member-tab.active {
+  background: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.member-tab .emoji {
+  margin-right: 0.3rem;
+}
+
 /* Timeline */
 .timeline {
   position: relative;
@@ -163,6 +202,7 @@ h2 {
   display: flex;
   align-items: baseline;
   gap: 0.5rem;
+  flex-wrap: wrap;
 }
 
 .timeline-item::before {
@@ -175,6 +215,10 @@ h2 {
   border-radius: 50%;
   background: var(--accent);
   transform: translateX(-3px);
+}
+
+.timeline-item.member-yusuf::before {
+  background: #00b894;
 }
 
 .timeline-date {
@@ -196,10 +240,26 @@ h2 {
   font-weight: 500;
 }
 
+.timeline-member {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--accent);
+}
+
+.timeline-member.yusuf {
+  background: rgba(0, 184, 148, 0.1);
+  color: #00b894;
+}
+
 .timeline-category.critical { background: rgba(225, 112, 85, 0.15); color: var(--category-critical); }
 .timeline-category.natural { background: rgba(0, 184, 148, 0.15); color: var(--category-natural); }
 .timeline-category.applied { background: rgba(9, 132, 227, 0.15); color: var(--category-applied); }
 .timeline-category.technology { background: rgba(108, 92, 231, 0.15); color: var(--category-technology); }
+.timeline-category.science { background: rgba(0, 184, 148, 0.15); color: var(--category-science); }
+.timeline-category.mathematics { background: rgba(253, 203, 110, 0.2); color: #d68910; }
+.timeline-category.psychology { background: rgba(232, 67, 147, 0.15); color: var(--category-psychology); }
 
 /* Next List */
 .next-list {
@@ -223,9 +283,26 @@ h2 {
   font-size: 0.7rem;
 }
 
+.next-item.member-yusuf::before {
+  color: #00b894;
+}
+
 .next-item .next-title {
   font-family: 'Source Serif 4', Georgia, serif;
   color: var(--text);
+}
+
+.next-item .next-member {
+  font-size: 0.6rem;
+  padding: 0.1rem 0.4rem;
+  border-radius: 10px;
+  background: rgba(108, 92, 231, 0.1);
+  color: var(--accent);
+}
+
+.next-item .next-member.yusuf {
+  background: rgba(0, 184, 148, 0.1);
+  color: #00b894;
 }
 
 /* Footer */

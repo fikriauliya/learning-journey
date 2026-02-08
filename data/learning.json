@@ -1,117 +1,85 @@
 {
   "started": "2026-02-07",
+  "members": [
+    {
+      "id": "levi",
+      "name": "Levi",
+      "emoji": "🎓",
+      "description": "Polymath journey"
+    },
+    {
+      "id": "yusuf",
+      "name": "Yusuf",
+      "emoji": "🎮",
+      "description": "Game-connected learning"
+    }
+  ],
   "topics": [
     {
+      "id": 7,
+      "member": "yusuf",
+      "title": "Buku Sains Minecraft",
+      "date": "2026-02-08",
+      "category": "Science",
+      "why": "Connecting Minecraft passion to real science — physics, chemistry, biology, and math through gaming."
+    },
+    {
       "id": 6,
+      "member": "levi",
       "title": "AI Existential Risk",
       "date": "2026-02-08",
       "category": "Technology",
-      "depth": "Undergraduate/Graduate",
-      "concepts": [
-        "Alignment problem",
-        "Instrumental convergence",
-        "Orthogonality thesis",
-        "Mesa-optimization",
-        "Treacherous turn",
-        "Specification problem",
-        "Governance challenges"
-      ],
-      "why": "Understanding the potential dangers of artificial intelligence — from sci-fi prophecies to serious research on existential risk."
+      "why": "Understanding potential dangers of AI — from sci-fi prophecies to serious research on existential risk."
     },
     {
       "id": 1,
+      "member": "levi",
       "title": "Causation vs Correlation",
       "date": "2026-02-07",
       "category": "Critical Thinking",
-      "depth": "Undergraduate/Graduate",
-      "concepts": [
-        "Correlation measurement (Pearson coefficient)",
-        "Confounding and third variables",
-        "Randomized controlled experiments",
-        "Observational methods",
-        "Bradford Hill criteria",
-        "Common fallacies",
-        "Potential outcomes framework"
-      ],
-      "why": "Foundation for critical thinking about evidence in any field — medicine, policy, business, personal decisions."
+      "why": "Foundation for critical thinking about evidence in any field."
     },
     {
       "id": 2,
+      "member": "levi",
       "title": "Logical Fallacies",
       "date": "2026-02-07",
       "category": "Critical Thinking",
-      "depth": "Undergraduate/Graduate",
-      "concepts": [
-        "Argument structure",
-        "Deductive vs inductive reasoning",
-        "Formal fallacies",
-        "Fallacies of relevance",
-        "Fallacies of presumption",
-        "Fallacies of ambiguity",
-        "Framework for evaluating arguments"
-      ],
-      "why": "Core critical thinking skill — recognizing flawed reasoning in others and yourself."
+      "why": "Recognizing flawed reasoning in others and yourself."
     },
     {
       "id": 3,
+      "member": "levi",
       "title": "Basic Entomology",
       "date": "2026-02-07",
       "category": "Natural Science",
-      "depth": "Undergraduate",
-      "concepts": [
-        "Insect defining characteristics",
-        "Body plan details",
-        "Development types",
-        "Hormonal control",
-        "Major insect orders",
-        "Ecological roles",
-        "Social insects"
-      ],
-      "why": "Understanding the most diverse and successful animal group. Practical applications in agriculture, medicine, and ecology."
+      "why": "Understanding the most diverse animal group."
     },
     {
       "id": 4,
+      "member": "levi",
       "title": "Insect Physiology",
       "date": "2026-02-07",
       "category": "Natural Science",
-      "depth": "Undergraduate/Graduate",
-      "concepts": [
-        "Integument structure",
-        "Respiration (tracheal system)",
-        "Circulation (open system)",
-        "Digestion",
-        "Excretion (Malpighian tubules)",
-        "Nervous system",
-        "Endocrine system",
-        "Muscle and movement"
-      ],
-      "why": "Deep dive into how insects function internally — critical for pest control and comparative physiology."
+      "why": "How insects function internally."
     },
     {
       "id": 5,
+      "member": "levi",
       "title": "Plant Pests & Diseases",
       "date": "2026-02-07",
       "category": "Applied Science",
-      "depth": "Undergraduate",
-      "concepts": [
-        "Pest diversity",
-        "Plant diseases",
-        "Disease triangle",
-        "Population dynamics",
-        "Disease epidemiology",
-        "Integrated Pest Management",
-        "Economic thresholds",
-        "Climate change impacts"
-      ],
-      "why": "Applied ecology connecting entomology and plant pathology. Essential for agriculture and food security."
+      "why": "Applied ecology for agriculture and food security."
     }
   ],
   "activityLog": [
-    { "date": "2026-02-08", "count": 1, "topics": ["AI Existential Risk"] },
-    { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"] }
+    { "date": "2026-02-08", "count": 2, "topics": ["AI Existential Risk", "Buku Sains Minecraft"], "members": ["levi", "yusuf"] },
+    { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"], "members": ["levi"] }
   ],
   "suggestedNext": [
-    { "title": "Bayesian Thinking", "category": "Critical Thinking", "description": "How to update beliefs with new evidence. The math of rational thinking." },
-    { "title": "Cognitive Biases & Heuristics", "category": "Psychology", "description": "Systematic errors in human judgment. Practical and immediately applicable." }
+    { "member": "levi", "title": "Bayesian Thinking", "category": "Critical Thinking", "description": "How to update beliefs with new evidence." },
+    { "member": "levi", "title": "Cognitive Biases", "category": "Psychology", "description": "Systematic errors in human judgment." },
+    { "member": "yusuf", "title": "Math Quest", "category": "Mathematics", "description": "Olimpiade-style problems as game challenges." },
+    { "member": "yusuf", "title": "Sports Science", "category": "Science", "description": "Physics of badminton, volleyball, and swimming." }
   ]
 }
