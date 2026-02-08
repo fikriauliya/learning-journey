@@ -155,13 +155,18 @@ h2 {
 
 /* Member Tabs */
 .members-section {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.members-section h2 {
+  margin-bottom: 0.75rem;
 }
 
 .member-tabs {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  padding: 0.5rem 0;
 }
 
 .member-tab {
