@@ -1,0 +1,11 @@
+{
+  "name": "levi-learning-journey",
+  "version": "1.0.0",
+  "description": "Levi's Polymath Learning Journey",
+  "scripts": {
+    "dev": "bun run --watch serve.ts",
+    "build": "bun run build.ts",
+    "serve": "bun run serve.ts"
+  },
+  "devDependencies": {}
+}

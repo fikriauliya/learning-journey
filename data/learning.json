@@ -1,0 +1,99 @@
+{
+  "started": "2026-02-07",
+  "topics": [
+    {
+      "id": 1,
+      "title": "Causation vs Correlation",
+      "date": "2026-02-07",
+      "category": "Critical Thinking",
+      "depth": "Undergraduate/Graduate",
+      "concepts": [
+        "Correlation measurement (Pearson coefficient)",
+        "Confounding and third variables",
+        "Randomized controlled experiments",
+        "Observational methods",
+        "Bradford Hill criteria",
+        "Common fallacies",
+        "Potential outcomes framework"
+      ],
+      "why": "Foundation for critical thinking about evidence in any field — medicine, policy, business, personal decisions."
+    },
+    {
+      "id": 2,
+      "title": "Logical Fallacies",
+      "date": "2026-02-07",
+      "category": "Critical Thinking",
+      "depth": "Undergraduate/Graduate",
+      "concepts": [
+        "Argument structure",
+        "Deductive vs inductive reasoning",
+        "Formal fallacies",
+        "Fallacies of relevance",
+        "Fallacies of presumption",
+        "Fallacies of ambiguity",
+        "Framework for evaluating arguments"
+      ],
+      "why": "Core critical thinking skill — recognizing flawed reasoning in others and yourself."
+    },
+    {
+      "id": 3,
+      "title": "Basic Entomology",
+      "date": "2026-02-07",
+      "category": "Natural Science",
+      "depth": "Undergraduate",
+      "concepts": [
+        "Insect defining characteristics",
+        "Body plan details",
+        "Development types",
+        "Hormonal control",
+        "Major insect orders",
+        "Ecological roles",
+        "Social insects"
+      ],
+      "why": "Understanding the most diverse and successful animal group. Practical applications in agriculture, medicine, and ecology."
+    },
+    {
+      "id": 4,
+      "title": "Insect Physiology",
+      "date": "2026-02-07",
+      "category": "Natural Science",
+      "depth": "Undergraduate/Graduate",
+      "concepts": [
+        "Integument structure",
+        "Respiration (tracheal system)",
+        "Circulation (open system)",
+        "Digestion",
+        "Excretion (Malpighian tubules)",
+        "Nervous system",
+        "Endocrine system",
+        "Muscle and movement"
+      ],
+      "why": "Deep dive into how insects function internally — critical for pest control and comparative physiology."
+    },
+    {
+      "id": 5,
+      "title": "Plant Pests & Diseases",
+      "date": "2026-02-07",
+      "category": "Applied Science",
+      "depth": "Undergraduate",
+      "concepts": [
+        "Pest diversity",
+        "Plant diseases",
+        "Disease triangle",
+        "Population dynamics",
+        "Disease epidemiology",
+        "Integrated Pest Management",
+        "Economic thresholds",
+        "Climate change impacts"
+      ],
+      "why": "Applied ecology connecting entomology and plant pathology. Essential for agriculture and food security."
+    }
+  ],
+  "activityLog": [
+    { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"] }
+  ],
+  "suggestedNext": [
+    { "title": "Bayesian Thinking", "category": "Critical Thinking", "description": "How to update beliefs with new evidence. The math of rational thinking." },
+    { "title": "Cognitive Biases & Heuristics", "category": "Psychology", "description": "Systematic errors in human judgment. Practical and immediately applicable." }
+  ]
+}

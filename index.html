@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levi's Learning Journey | Polymath Path</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>📚 Learning Journey</h1>
+      <p class="subtitle">Polymath Path — One Topic at a Time</p>
+      <div class="stats" id="stats">
+        <div class="stat">
+          <span class="stat-value" id="total-topics">0</span>
+          <span class="stat-label">Topics Completed</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="total-days">0</span>
+          <span class="stat-label">Days Learning</span>
+        </div>
+        <div class="stat">
+          <span class="stat-value" id="current-streak">0</span>
+          <span class="stat-label">Day Streak</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="heatmap-section">
+      <h2>🔥 Activity</h2>
+      <div class="heatmap-container">
+        <div class="heatmap-months" id="heatmap-months"></div>
+        <div class="heatmap-wrapper">
+          <div class="heatmap-days">
+            <span>Mon</span>
+            <span>Wed</span>
+            <span>Fri</span>
+          </div>
+          <div class="heatmap" id="heatmap"></div>
+        </div>
+      </div>
+      <div class="heatmap-legend">
+        <span>Less</span>
+        <div class="legend-box level-0"></div>
+        <div class="legend-box level-1"></div>
+        <div class="legend-box level-2"></div>
+        <div class="legend-box level-3"></div>
+        <div class="legend-box level-4"></div>
+        <span>More</span>
+      </div>
+    </section>
+
+    <section class="topics-section">
+      <h2>✅ Completed Topics</h2>
+      <div class="topics-grid" id="topics-grid"></div>
+    </section>
+
+    <section class="next-section">
+      <h2>🎯 Up Next</h2>
+      <div class="next-grid" id="next-grid"></div>
+    </section>
+
+    <footer>
+      <p>Started <span id="start-date">February 2026</span> · Built with curiosity ✨</p>
+      <p class="quote">"اقرأ — Read."</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
