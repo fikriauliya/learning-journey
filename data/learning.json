@@ -16,6 +16,14 @@
   ],
   "topics": [
     {
+      "id": 10,
+      "member": "levi",
+      "title": "Bayesian Thinking: The Logic of Belief",
+      "date": "2026-02-09",
+      "category": "Critical Thinking",
+      "why": "From binary certainty to calibrated probability — Pascal, Bayes, Dutch Book argument, priors as strength, thinking in distributions."
+    },
+    {
       "id": 9,
       "member": "yusuf",
       "title": "Sains Olahraga: Cara Hinata Lompat Tinggi",
@@ -89,11 +97,12 @@
     }
   ],
   "activityLog": [
+    { "date": "2026-02-09", "count": 1, "topics": ["Bayesian Thinking: The Logic of Belief"], "members": ["levi"] },
     { "date": "2026-02-08", "count": 4, "topics": ["AI Existential Risk", "Buku Sains Minecraft", "Tanaman Superhero", "Sains Olahraga: Cara Hinata Lompat Tinggi"], "members": ["levi", "yusuf"] },
     { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"], "members": ["levi"] }
   ],
   "suggestedNext": [
-    { "member": "levi", "title": "Bayesian Thinking", "category": "Critical Thinking", "description": "How to update beliefs with new evidence." },
+    { "member": "levi", "title": "Bayes' Theorem: The Engine of Rational Updating", "category": "Critical Thinking", "description": "Chapter 2 of Bayesian Thinking — the math behind updating beliefs." },
     { "member": "levi", "title": "Cognitive Biases", "category": "Psychology", "description": "Systematic errors in human judgment." },
     { "member": "yusuf", "title": "Math Quest", "category": "Mathematics", "description": "Olimpiade-style problems as game challenges." },
     { "member": "yusuf", "title": "Space Explorer", "category": "Science", "description": "Solar system, rockets, astronauts — connecting to Minecraft's The End!" }
