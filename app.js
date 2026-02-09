@@ -210,7 +210,8 @@ function getCategoryClass(category) {
     'Technology': 'technology',
     'Science': 'science',
     'Mathematics': 'mathematics',
-    'Psychology': 'psychology'
+    'Psychology': 'psychology',
+    'Sports Science': 'sports'
   };
   return map[category] || 'critical';
 }

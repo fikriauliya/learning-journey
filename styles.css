@@ -298,6 +298,7 @@ h2 {
 .timeline-category.science { background: rgba(0, 184, 148, 0.15); color: var(--category-science); }
 .timeline-category.mathematics { background: rgba(253, 203, 110, 0.2); color: #d68910; }
 .timeline-category.psychology { background: rgba(232, 67, 147, 0.15); color: var(--category-psychology); }
+.timeline-category.sports { background: rgba(253, 121, 168, 0.15); color: #e84393; }
 
 /* Next List */
 .next-list {
