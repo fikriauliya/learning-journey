@@ -16,6 +16,14 @@
   ],
   "topics": [
     {
+      "id": 11,
+      "member": "levi",
+      "title": "How to Lie with Statistics",
+      "date": "2026-02-09",
+      "category": "Critical Thinking",
+      "why": "A classic on statistical deception — sampling bias, misleading graphs, dubious averages, and how to spot manipulation in data."
+    },
+    {
       "id": 10,
       "member": "levi",
       "title": "Bayesian Thinking: The Logic of Belief",
@@ -97,7 +105,7 @@
     }
   ],
   "activityLog": [
-    { "date": "2026-02-09", "count": 1, "topics": ["Bayesian Thinking: The Logic of Belief"], "members": ["levi"] },
+    { "date": "2026-02-09", "count": 2, "topics": ["How to Lie with Statistics", "Bayesian Thinking: The Logic of Belief"], "members": ["levi"] },
     { "date": "2026-02-08", "count": 4, "topics": ["AI Existential Risk", "Buku Sains Minecraft", "Tanaman Superhero", "Sains Olahraga: Cara Hinata Lompat Tinggi"], "members": ["levi", "yusuf"] },
     { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"], "members": ["levi"] }
   ],
