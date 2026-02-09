@@ -39,9 +39,28 @@ body {
 }
 
 .container {
-  max-width: 700px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 1.5rem 2.5rem;
+}
+
+/* Two-column layout for desktop */
+.two-col {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.left-col {
+  position: sticky;
+  top: 1.5rem;
+  flex: 0 0 340px;
+  min-width: 0;
+}
+
+.right-col {
+  flex: 1;
+  min-width: 0;
 }
 
 header {
@@ -351,6 +370,28 @@ footer {
 
 .tooltip strong {
   color: var(--accent);
+}
+
+/* Tablet and below: stack to single column */
+@media (max-width: 860px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .two-col {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .left-col {
+    position: static;
+    flex: none;
+    width: 100%;
+  }
+
+  .right-col {
+    width: 100%;
+  }
 }
 
 /* Mobile-first responsive */

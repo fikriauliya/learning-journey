@@ -7,7 +7,7 @@
   <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
   <meta http-equiv="Pragma" content="no-cache">
   <meta http-equiv="Expires" content="0">
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
@@ -19,49 +19,55 @@
       <p class="subtitle">Growing Together — One Topic at a Time</p>
     </header>
 
-    <section class="heatmap-section">
-      <div class="heatmap-container">
-        <div class="heatmap-months" id="heatmap-months"></div>
-        <div class="heatmap-wrapper">
-          <div class="heatmap-days">
-            <span>Mon</span>
-            <span>Wed</span>
-            <span>Fri</span>
+    <div class="two-col">
+      <aside class="left-col">
+        <section class="heatmap-section">
+          <div class="heatmap-container">
+            <div class="heatmap-months" id="heatmap-months"></div>
+            <div class="heatmap-wrapper">
+              <div class="heatmap-days">
+                <span>Mon</span>
+                <span>Wed</span>
+                <span>Fri</span>
+              </div>
+              <div class="heatmap" id="heatmap"></div>
+            </div>
           </div>
-          <div class="heatmap" id="heatmap"></div>
-        </div>
-      </div>
-      <div class="heatmap-legend">
-        <span>Less</span>
-        <div class="legend-box level-0"></div>
-        <div class="legend-box level-1"></div>
-        <div class="legend-box level-2"></div>
-        <div class="legend-box level-3"></div>
-        <div class="legend-box level-4"></div>
-        <span>More</span>
-      </div>
-    </section>
+          <div class="heatmap-legend">
+            <span>Less</span>
+            <div class="legend-box level-0"></div>
+            <div class="legend-box level-1"></div>
+            <div class="legend-box level-2"></div>
+            <div class="legend-box level-3"></div>
+            <div class="legend-box level-4"></div>
+            <span>More</span>
+          </div>
+        </section>
+      </aside>
 
-    <section class="members-section">
-      <h2>👥 Filter by Member</h2>
-      <div class="member-tabs" id="member-tabs"></div>
-    </section>
+      <main class="right-col">
+        <section class="members-section">
+          <h2>👥 Filter by Member</h2>
+          <div class="member-tabs" id="member-tabs"></div>
+        </section>
 
-    <section class="timeline-section">
-      <h2>📖 Learning</h2>
-      <div class="timeline" id="timeline"></div>
-    </section>
+        <section class="timeline-section">
+          <h2>📖 Learning</h2>
+          <div class="timeline" id="timeline"></div>
+        </section>
 
-    <section class="next-section">
-      <h2>🎯 Up Next</h2>
-      <div class="next-list" id="next-list"></div>
-    </section>
+        <section class="next-section">
+          <h2>🎯 Up Next</h2>
+          <div class="next-list" id="next-list"></div>
+        </section>
+      </main>
+    </div>
 
     <footer>
       <p>Started <span id="start-date">February 2026</span> · <span class="quote">"اقرأ — Read."</span></p>
     </footer>
   </div>
 
-  <script src="app.js?v=4"></script>
+  <script src="app.js?v=5"></script>
 </body>
 </html>
