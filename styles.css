@@ -291,6 +291,15 @@ h2 {
   color: #00b894;
 }
 
+.timeline-item.member-family::before {
+  background: #fdcb6e;
+}
+
+.timeline-member.family {
+  background: rgba(253, 203, 110, 0.2);
+  color: #d68910;
+}
+
 .timeline-category.critical { background: rgba(225, 112, 85, 0.15); color: var(--category-critical); }
 .timeline-category.natural { background: rgba(0, 184, 148, 0.15); color: var(--category-natural); }
 .timeline-category.applied { background: rgba(9, 132, 227, 0.15); color: var(--category-applied); }
@@ -342,6 +351,15 @@ h2 {
 .next-item .next-member.yusuf {
   background: rgba(0, 184, 148, 0.1);
   color: #00b894;
+}
+
+.next-item.member-family::before {
+  color: #fdcb6e;
+}
+
+.next-item .next-member.family {
+  background: rgba(253, 203, 110, 0.2);
+  color: #d68910;
 }
 
 /* Footer */

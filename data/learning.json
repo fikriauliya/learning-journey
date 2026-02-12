@@ -12,9 +12,47 @@
       "name": "Yusuf",
       "emoji": "🎮",
       "description": "Game-connected learning"
+    },
+    {
+      "id": "family",
+      "name": "Family",
+      "emoji": "👨‍👩‍👧‍👦",
+      "description": "Learning together"
     }
   ],
   "topics": [
+    {
+      "id": 15,
+      "member": "levi",
+      "title": "Bayesian Thinking Ch4: Likelihood & Evidence",
+      "date": "2026-02-12",
+      "category": "Critical Thinking",
+      "why": "Likelihood vs probability, likelihood ratios, Bayes' odds form, diagnostic power, practical applications."
+    },
+    {
+      "id": 14,
+      "member": "levi",
+      "title": "Bayesian Thinking Ch3: Priors",
+      "date": "2026-02-11",
+      "category": "Critical Thinking",
+      "why": "The art of starting somewhere — choosing priors, uninformative vs informative, the swamping property."
+    },
+    {
+      "id": 13,
+      "member": "family",
+      "title": "Thinking, Fast and Slow (ongoing)",
+      "date": "2026-02-11",
+      "category": "Psychology",
+      "why": "Kahneman's masterwork on System 1 & 2 — daily chapter summaries shared with the family."
+    },
+    {
+      "id": 12,
+      "member": "levi",
+      "title": "Bayesian Thinking Ch2: Bayes' Theorem",
+      "date": "2026-02-10",
+      "category": "Critical Thinking",
+      "why": "The engine of rational updating — the math behind updating beliefs with evidence."
+    },
     {
       "id": 11,
       "member": "levi",
@@ -26,10 +64,10 @@
     {
       "id": 10,
       "member": "levi",
-      "title": "Bayesian Thinking: The Logic of Belief",
+      "title": "Bayesian Thinking Ch1: Logic of Belief",
       "date": "2026-02-09",
       "category": "Critical Thinking",
-      "why": "From binary certainty to calibrated probability — Pascal, Bayes, Dutch Book argument, priors as strength, thinking in distributions."
+      "why": "From binary certainty to calibrated probability — Pascal, Bayes, Dutch Book argument, priors as strength."
     },
     {
       "id": 9,
@@ -105,12 +143,15 @@
     }
   ],
   "activityLog": [
-    { "date": "2026-02-09", "count": 2, "topics": ["How to Lie with Statistics", "Bayesian Thinking: The Logic of Belief"], "members": ["levi"] },
+    { "date": "2026-02-12", "count": 1, "topics": ["Bayesian Thinking Ch4: Likelihood & Evidence"], "members": ["levi"] },
+    { "date": "2026-02-11", "count": 2, "topics": ["Bayesian Thinking Ch3: Priors", "Thinking, Fast and Slow"], "members": ["levi", "family"] },
+    { "date": "2026-02-10", "count": 1, "topics": ["Bayesian Thinking Ch2: Bayes' Theorem"], "members": ["levi"] },
+    { "date": "2026-02-09", "count": 2, "topics": ["How to Lie with Statistics", "Bayesian Thinking Ch1: Logic of Belief"], "members": ["levi"] },
     { "date": "2026-02-08", "count": 4, "topics": ["AI Existential Risk", "Buku Sains Minecraft", "Tanaman Superhero", "Sains Olahraga: Cara Hinata Lompat Tinggi"], "members": ["levi", "yusuf"] },
     { "date": "2026-02-07", "count": 5, "topics": ["Causation vs Correlation", "Logical Fallacies", "Basic Entomology", "Insect Physiology", "Plant Pests & Diseases"], "members": ["levi"] }
   ],
   "suggestedNext": [
-    { "member": "levi", "title": "Bayes' Theorem: The Engine of Rational Updating", "category": "Critical Thinking", "description": "Chapter 2 of Bayesian Thinking — the math behind updating beliefs." },
+    { "member": "levi", "title": "Bayesian Thinking Ch5: Medicine, Law & Everyday Life", "category": "Critical Thinking", "description": "Practical Bayesian reasoning applied to real-world decisions." },
     { "member": "levi", "title": "Cognitive Biases", "category": "Psychology", "description": "Systematic errors in human judgment." },
     { "member": "yusuf", "title": "Math Quest", "category": "Mathematics", "description": "Olimpiade-style problems as game challenges." },
     { "member": "yusuf", "title": "Space Explorer", "category": "Science", "description": "Solar system, rockets, astronauts — connecting to Minecraft's The End!" }
